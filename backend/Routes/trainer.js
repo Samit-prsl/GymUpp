@@ -19,6 +19,7 @@ Router.post('/register', async (req,res)=>{
         const salt = await bcrypt.genSalt(10)
         const hashedPassword = await bcrypt.hash(password,salt)
 
+
         const newTrainer = new Trainer({username,password:hashedPassword,exp,special,phone})
         await newTrainer.save()
 
