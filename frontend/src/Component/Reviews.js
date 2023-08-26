@@ -3,7 +3,7 @@ import { ImQuotesLeft} from 'react-icons/im'
 import {AiFillStar} from 'react-icons/ai'
 export default function Reviews() {
   return (
-    <div className=' min-h-screen bg-[#040D12] p-12 border-t-2 border-[#eec84c] rounded-t-[4rem] border-b-2 rounded-b-[4rem]'>
+    <div className=' min-h-screen bg-[#040D12] p-12 border-t-2 border-[#eec84c] rounded-t-[4rem] border-b-2 rounded-b-[4rem]' id='reviews'>
        <h1 className=' text-4xl lg:text-5xl font-[Cinzel] text-[#d4af37]'>What others say?</h1>
 
        <div className=' lg:py-16 py-10 lg:flex lg:justify-between lg:gap-5'>

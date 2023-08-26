@@ -3,33 +3,37 @@ import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios'
 export default function Register() {
 
-    const [username,Setusername] = useState('')
-    const [password,Setpassword] = useState('')
+    const [username,Setusername] = useState()
+    const [password,Setpassword] = useState()
     const [age,Setage] = useState(0)
     const [weight,Setweight] = useState(0) 
     const [height,Setheight] = useState(0)
+    const [loading,Setloading] = useState(false)
 
     const handlesubmit = async(e)=>{
+
         e.preventDefault()
         try {
             
+          Setloading(true)
+          toast('Registering....', {
+            duration: 750,
+            style: {
+                border: '1px solid #713200',
+                padding: '16px',
+                color: '#d4af37',
+                background :'#040D12'
+              },
+            icon: '🙏',
+          });
             const res = await axios.post('https://gymupp-api.onrender.com/api/user/register',{
                 username,password,age,weight,height
             })
             console.log(res.data)
-            toast('Registering....', {
-                duration: 750,
-                style: {
-                    border: '1px solid #713200',
-                    padding: '16px',
-                    color: '#d4af37',
-                    background :'#040D12'
-                  },
-                icon: '🙏',
-              });
             window.location.replace('/user/login')
 
         } catch (err) {
+          Setloading(false)
             toast('Please fill in the details carefully.', {
                 duration: 1000,
                 style: {
@@ -144,7 +148,7 @@ export default function Register() {
                 icon: '🤔',
               });
         }}/>
-         <button className=' px-10 py-3 bg-[#183D3D] text-[#d4af37] font-[Poppins] rounded-xl hover:bg-[#112e2e]' onClick={handlesubmit}>Register</button>
+         <button className={` px-10 py-3 bg-[#183D3D] text-[#d4af37] font-[Poppins] rounded-xl hover:bg-[#112e2e] ${loading ? 'cursor-not-allowed':'cursor-pointer'} `} onClick={handlesubmit}>Register</button>
          <a className='text-lg lg:text-xl font-[Cinzel] text-[#d4af37] hover:text-[#a08f59]' href='/user/login'>Already Registered? Login!</a>
         <Toaster  position="top-center"/>
       </div>
