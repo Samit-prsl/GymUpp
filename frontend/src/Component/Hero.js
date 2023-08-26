@@ -14,7 +14,7 @@ export default function Hero() {
         <div className=' h-full w-full drop-shadow-2xl bg-[#d3c185] p-5 my-3 lg:my-0 py-5'>
             <img src="https://images.unsplash.com/photo-1570440828843-ccc432c6fad7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGJhcmJlbGx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="" className=' pb-10'/>
             <h1 className=' lg:text-2xl text-xl font-[Quicksand] text-[#040D12] pb-9'>Embrace the challenge of the gym, where every drop of sweat is a step closer to unlocking your potential and achieving greatness.</h1>
-            <button className=' px-5 py-3 bg-[#183D3D] text-[#d4af37] font-[Poppins] rounded-xl lg:ml-[75px] ml-4 '>Start now as a trainer!</button>
+            <a href="/trainer/register"><button className=' px-5 py-3 bg-[#183D3D] text-[#d4af37] font-[Poppins] rounded-xl lg:ml-[75px] ml-4 '>Start now as a trainer!</button></a>
         </div>
         <div className=' h-full w-full drop-shadow-2xl bg-[#040D12] p-5 my-3 lg:my-0'>
              <img src="https://images.unsplash.com/photo-1565895405138-6c3a1555da6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGlldHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" className=' pb-12'/>

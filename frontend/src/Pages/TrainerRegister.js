@@ -13,10 +13,10 @@ export default function Register() {
         e.preventDefault()
         try {
             
-            const res = await axios.post('https://gymupp-api.onrender.com/api/user/register',{
+            const res = await axios.post('https://gymupp-api.onrender.com/api/trainer/register',{
                 username,password,exp,special,phone
             })
-            //console.log(res.data)
+            console.log(res.data)
             toast('Registering....', {
                 duration: 750,
                 style: {
