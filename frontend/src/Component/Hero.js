@@ -8,8 +8,8 @@ export default function Hero() {
         <div className=' h-full w-full drop-shadow-2xl bg-[#040D12] p-5 my-3 lg:my-0'>
             <img src="https://plus.unsplash.com/premium_photo-1664298084551-277444c16b1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJhcmJlbGx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="" className=' pb-10 ' />
             <h1 className=' lg:text-2xl text-xl font-[Quicksand] text-[#d3c185] pb-10'>Success in the gym isn't measured by the weight you lift, but by the dedication, determination, and persistence you bring to every workout.</h1>
-            <button className=' px-5 py-3 bg-[#183D3D] text-[#d4af37] font-[Poppins] rounded-xl lg:ml-[75px]
-            ml-3'>Start now as a newbie!</button>
+            <a href="/user/register"><button className=' px-5 py-3 bg-[#183D3D] text-[#d4af37] font-[Poppins] rounded-xl lg:ml-[75px]
+            ml-3'>Start now as a newbie!</button></a>
         </div>
         <div className=' h-full w-full drop-shadow-2xl bg-[#d3c185] p-5 my-3 lg:my-0 py-5'>
             <img src="https://images.unsplash.com/photo-1570440828843-ccc432c6fad7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGJhcmJlbGx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="" className=' pb-10'/>

@@ -9,7 +9,7 @@ const trainerModel = new mongoose.Schema({
         type : String
     },
     exp : {
-        type : String
+        type : Number
     },
     special : {
         type : String
