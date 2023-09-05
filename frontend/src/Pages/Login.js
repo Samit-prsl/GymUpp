@@ -13,7 +13,6 @@ export default function Login() {
           
         Setloading(true)
         toast('Login in....', {
-          duration: 750,
           style: {
               border: '1px solid #713200',
               padding: '16px',

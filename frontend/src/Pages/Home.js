@@ -3,6 +3,7 @@ import Layout from '../Component/Layout'
 import Hero from '../Component/Hero'
 import Reviews from '../Component/Reviews'
 import Navbar from '../Component/Navbar'
+import Video from '../Component/Video'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Layout/>
       <Hero/>
       <Reviews/>
+      <Video/>
     </div>
   )
 }
