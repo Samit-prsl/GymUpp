@@ -1,0 +1,10 @@
+version : '1'
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: dockerfile
+    image: gymupp-frontend-prod
+    container_name: gymupp-frontend
+    ports:
+      - "3000:80"
