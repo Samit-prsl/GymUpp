@@ -12,7 +12,7 @@ pipeline {
       {
          steps {
             dir('frontend') {
-                sh 'docker build -t gymupp-frontend ./'
+                sh 'sudo docker build -t gymupp-frontend ./'
             }
          }
       }
