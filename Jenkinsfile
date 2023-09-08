@@ -8,12 +8,11 @@ pipeline {
             checkout scm
          }
       }
-      stage('Frontend build and test')
+      stage('Frontend image build and test')
       {
          steps {
             dir('frontend') {
-                sh 'npm install'
-                sh 'npm run test'
+                sh 'docker build -t gymupp-frontend ./'
             }
          }
       }
