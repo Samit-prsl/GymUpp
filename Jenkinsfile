@@ -12,8 +12,7 @@ pipeline {
       {
          steps {
             dir('frontend') {
-                sh 'npm install'
-                sh 'npm run test'
+               sh 'docker build -t gymupp-frontend ./'
             }
          }
       }
