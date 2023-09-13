@@ -25,7 +25,7 @@ export default function Register() {
               },
             icon: '🙏',
           });
-            const res = await axios.post('https://gymupp-api.onrender.com/api/user/register',{
+            const res = await axios.post('https://gym-upp-ts.onrender.com/user/register',{
                 username,password,age,weight,height
             })
             console.log(res.data)

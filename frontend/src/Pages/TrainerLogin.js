@@ -21,7 +21,7 @@ export default function TrainerLogin() {
             },
           icon: '🙏',
         });
-          const res = await axios.post('https://gymupp-api.onrender.com/api/trainer/login',{
+          const res = await axios.post('https://gym-upp-ts.onrender.com/trainer/login',{
               username,password
           })
           localStorage.setItem('token',res.data.token)

@@ -4,6 +4,7 @@ import Trainer from "./Routes/trainerRoutes"
 import mongoose from "mongoose"
 import dotenv from 'dotenv'
 dotenv.config()
+import cors from 'cors'
 const app : Application = express()
 const PORT : number = 3000
 
@@ -11,6 +12,7 @@ app.get('/',(req:Request,res:Response):void=>{
     res.status(200).json('Working fine in typescript')
 })
 
+app.use(cors())
 app.use(express.json())
 app.use('/user',User)
 app.use('/trainer',Trainer)
