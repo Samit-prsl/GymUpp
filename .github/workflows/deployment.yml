@@ -25,11 +25,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'  
     - name: Install Dependencies
-      working-directory: frontend
+      working-directory: /home/ubuntu/actions-runner/Gymupp/GymUpp/GymUpp/frontend
       run: npm i 
     - name: Build
-      working-directory: frontend
+      working-directory: /home/ubuntu/actions-runner/Gymupp/GymUpp/GymUpp/frontend
       run: npm run build --if-present
     - name: Run tests
-      working-directory: frontend
+      working-directory: /home/ubuntu/actions-runner/Gymupp/GymUpp/GymUpp/frontend
       run: npm test
