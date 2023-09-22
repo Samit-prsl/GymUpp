@@ -1,3 +1,4 @@
+import * as React from 'react'
 import './App.css';
 import { BrowserRouter as Router,
 Routes,Route} from 'react-router-dom'
@@ -11,11 +12,11 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route exact path='/' Component={Home}/>
-        <Route path='/user/register' Component={Register}/>
-        <Route path='/user/login' Component={Login}/>
-        <Route path='/trainer/register' Component={TrainerRegister}/>
-        <Route path='/trainer/login' Component={TrainerLogin}/>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/user/register' element={<Register/>}/>
+        <Route path='/user/login' element={<Login/>}/>
+        <Route path='/trainer/register' element={<TrainerRegister/>}/>
+        <Route path='/trainer/login' element={<TrainerLogin/>}/>
       </Routes>
     </Router>
     </>
